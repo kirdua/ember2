@@ -1,0 +1,31 @@
+<h1 {{action "toggleBody"}}>{{title}}</h1>
+{{#if isShowingBody}}
+  <p>{{body}}</p>
+{{/if}}
+<p>
+  <strong>Authors: </strong>
+  {{#each authors as |author|}}
+    {{author}},
+  {{/each}}
+</p>
+
+<h4>Comments</h4>
+<ul>
+  {{#each comments as |c|}}
+    <li><strong>{{c.name}}</strong> - {{c.comment}}</li>
+  {{/each}}
+</ul>
+ <p>
+   Created by {{format-date created}}
+ </p>
+<hr>
+<h4>Add Comment</h4>
+<form {{action "submitAction" on="submit"}}>
+  <p>
+    Name: {{input value=name}}
+  </p>
+  <p>
+    Comment: {{textarea value=comment}}
+  </p>
+  <button type="submit">Submit</button>
+</form>

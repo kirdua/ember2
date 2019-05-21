@@ -1,0 +1,32 @@
+{
+    "name": "app2",
+    "description": "fun",
+    "moduleType": [
+      "globals"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+    ],
+    "dependencies": {
+        "jquery-migrate": "~3.0.0",
+        "moment": "^2.24.0",
+        "velocity": "^1.5.2",
+        "yepnope": "1.x"
+    },
+    "devDependencies": {
+        "ceibo": "2.0.0",
+        "blanket": "5e94fc30f2e694bb5c3718ddcbf60d467f4b4d26",
+        "buffer": "^3.46.1",
+        "jquery.cookie": "~1.4.1",
+        "jquery-touchswipe": "^1.6.18",
+        "better-mocha-html-reporter": "git://github.com/ef4/better-mocha-html-reporter.git",
+        "timeShift": "git://github.com/plaa/TimeShift-js.git",
+        "text-encoding": "^0.6.2"
+    }
+}
